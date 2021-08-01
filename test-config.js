@@ -14,16 +14,12 @@ exports.config = {
   sync: true,
   specs: ["./api/addValue.js"],
 
-  // deviceName: "QV7011B61E",
-
   capabilities: [
     {
       platformName: "Android",
-      automationName: "UiAutomator2",
-      udid: "emulator-5554",
+      deviceName: "QV7011B61E",
       appPackage: "com.wdiodemoapp",
-      appActivity: ".MainActivity",
-      noReset: false,
+      appActivity: "com.wdiodemoapp.MainActivity",
     },
   ],
 };
